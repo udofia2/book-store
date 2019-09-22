@@ -1,5 +1,5 @@
-require('dotenv').config()
 if(process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
 }
 const express = require('express');
 const path = require('path')
@@ -32,4 +32,4 @@ const PORT = process.env.PORT || 3000
 
 app.listen(PORT, ()=> console.log(`Server is started on port ${PORT}`))
 
-console.log('Connection url => ', process.env.MONGO_URL);
+// console.log('Connection url => ', process.env.MONGO_URL);
